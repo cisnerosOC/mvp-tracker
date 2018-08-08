@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
-  selector: 'mvp-mvp-title-bar',
+  selector: 'mvp-title-bar',
   templateUrl: './mvp-title-bar.component.html',
   styleUrls: ['./mvp-title-bar.component.css']
 })

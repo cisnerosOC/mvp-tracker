@@ -3,7 +3,7 @@ import { MatPaginator, MatSort } from '@angular/material';
 import { MvpGamelogDataSource } from './mvp-gamelog-datasource';
 
 @Component({
-  selector: 'mvp-mvp-gamelog',
+  selector: 'mvp-gamelog',
   templateUrl: './mvp-gamelog.component.html',
   styleUrls: ['./mvp-gamelog.component.css']
 })
