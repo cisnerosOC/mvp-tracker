@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -25,15 +24,6 @@ export class PlayerService {
     return this.http.get<any>(playerUrl, httpOptions);
   }
 
-  getPlayerLog(): Observable<any> {
-    const playerLogUrl = this.url + 'game_logs';
-    const params = new HttpParams()
-      .set('player_id', 'mlb-javier-baez')
-      .set('season_id', 'mlb-2018')
-      .set('status', 'ended');
-    const httpOptions = { ...this.httpOptions, ...params };
-    return this.http.get<any>(playerLogUrl, httpOptions);
-  }
 
   getPlayerStats(): Observable<any> {
 
