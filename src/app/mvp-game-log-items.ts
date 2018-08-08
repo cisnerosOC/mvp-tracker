@@ -21,10 +21,7 @@ export interface MvpGameLogItem {
   walks: number;
   opponent: Team;
   gameResults: Game;
-
-
 }
-
 
 export class MvpGameLogItems {
   game_log: MvpGameLogItem[] = [];
@@ -43,8 +40,6 @@ export class MvpGameLogItems {
       this.game_log.push(logItem);
     });
   }
-
-
 
   private buildMvpGameLogItem(playerGameLog): MvpGameLogItem {
     const opponentInfo = this.opposing_teams.find(oppenentsObj => playerGameLog.opponent_id === oppenentsObj.id);
@@ -72,11 +67,5 @@ export class MvpGameLogItems {
     };
     return mvpGamelogItem;
   }
-  private buildOppenetColumn(playerGameLog){
-
-
-  }
-
-
 
 }
