@@ -7,8 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MvpTitleBarComponent } from './mvp-title-bar/mvp-title-bar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatIconModule,
-         MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatSidenavModule } from '@angular/material';
+         MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatSidenavModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
 import { MvpGamelogComponent } from './mvp-gamelog/mvp-gamelog.component';
+import { PlayerDashboardComponent } from './player-dashboard/player-dashboard.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MvpGamelogComponent } from './mvp-gamelog/mvp-gamelog.component';
     AppComponent,
     MvpTitleBarComponent,
     MvpGamelogComponent,
+    PlayerDashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,10 @@ import { MvpGamelogComponent } from './mvp-gamelog/mvp-gamelog.component';
     MatPaginatorModule,
     MatSortModule,
     MatSidenavModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
